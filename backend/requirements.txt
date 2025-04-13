@@ -1,5 +1,6 @@
 fastapi
 uvicorn
 sqlalchemy
-openai
-python-dotenv
+asyncpg
+passlib[bcrypt]
+python-jose[cryptography]

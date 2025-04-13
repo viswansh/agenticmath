@@ -1,0 +1,32 @@
+.body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9; /* Light background */
+    color: #333;
+    min-height: 100vh;
+  }
+
+  .nav {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .navLink {
+    text-decoration: none;
+    color: #0070f3;
+    font-weight: 500;
+  }
+
+  .navLink:hover {
+    text-decoration: underline;
+  }
+
+  .main {
+    padding: 2rem;
+  }

@@ -12,16 +12,28 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 @app.get("/curriculum")
 def get_curriculum():
     return [
-        {"id": 1, "title": "Intro to Python", "description": "Learn variables, loops, and functions"},
-        {"id": 2, "title": "Web Development", "description": "HTML, CSS, JavaScript basics"},
-        {"id": 3, "title": "APIs & Backend", "description": "Build REST APIs with FastAPI"},
+        {
+            "id": 1,
+            "title": "Intro to Python",
+            "description": "Learn variables, loops, and functions",
+        },
+        {
+            "id": 2,
+            "title": "Web Development",
+            "description": "HTML, CSS, JavaScript basics",
+        },
+        {
+            "id": 3,
+            "title": "Elementary School Math",
+            "description": "Learn addition, subtraction, multiplication, and division",
+        },
     ]
 
 
 @app.get("/")
 def read_root():
     return {"message": "Hello from FastAPI backend!"}
-
